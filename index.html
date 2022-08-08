@@ -5,6 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="sidebar">
+      <div class="logo">Dashboard</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Tasks</a></li>
+          <li><a href="#">Communities</a></li>
+        </ul>
+        <ul class="nav-links">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <header>
+        <div class="header-top">
+          <form action="#">
+            <button type="submit"></button>
+            <div>
+              <input type="search" id="search" name="q" />
+              <label for="search">Search</label>
+            </div>
+          </form>
+          <button type="button" class="btn"></button>
+          <img src="" alt="" class="profile-pic small-pic" />
+          <p>Ricardo Lobo</p>
+        </div>
+        <div class="header-bottom">
+          <img src="" alt="" class="profile-pic big-pic" />
+          <div class="greeting">
+            <p>Hi there,</p>
+            <p class="username">Ricardo Lobo (@rickylobo)</p>
+          </div>
+          <ul class="header-btns">
+            <li>
+              <button type="button" class="header-btn btn"></button>
+            </li>
+            <li>
+              <button type="button" class="header-btn btn"></button>
+            </li>
+            <li>
+              <button type="button" class="header-btn btn"></button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section id="projects" class="section">
+        <h1>Your Projects</h1>
+        <div class=""></div>
+      </section>
+      <section id="announcements" class="section">
+        <h1>Announcements</h1>
+      </section>
+      <section id="trending" class="section">
+        <h1>Trending</h1>
+      </section>
+    </main>
+  </body>
 </html>
