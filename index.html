@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- SIDEBAR -->
     <div class="sidebar">
       <div class="logo">
         <svg viewBox="0 0 24 24" class="symbol">
@@ -113,6 +114,8 @@
         </ul>
       </nav>
     </div>
+
+    <!-- HEADER -->
     <header class="header">
       <div class="header-tl">
         <form action="#" class="search-form">
@@ -125,8 +128,8 @@
             </svg>
           </button>
           <div class="form-control">
-            <input type="search" id="search" name="q" />
-            <label for="search"></label>
+            <input type="search" id="search" name="q" placeholder=" " />
+            <label for="search">Search</label>
           </div>
         </form>
       </div>
@@ -155,6 +158,8 @@
         <button type="button" class="header-btn">Share</button>
       </div>
     </header>
+
+    <!-- MAIN -->
     <main class="main">
       <section id="projects" class="section">
         <h1 class="section-heading">Your Projects</h1>
@@ -383,64 +388,66 @@
           </div>
         </div>
       </section>
-      <section id="announcements" class="section">
-        <h1 class="section-heading">Announcements</h1>
-        <div class="announcements-container container">
-          <div class="announcement">
-            <h3 class="announcement-heading">Site Maintenance</h3>
-            <p class="announcement-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-              nulla deleniti asperiores deserunt, molestiae tempore delectus...
-            </p>
-          </div>
-          <hr />
-          <div class="announcement">
-            <h3 class="announcement-heading">Community Share Day</h3>
-            <p class="announcement-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex vel
-              vitae necessitatibus quaerat minus ducimus doloremque culpa
-              beatae...
-            </p>
-          </div>
-          <hr />
-          <div class="announcement">
-            <h3 class="announcement-heading">Updated Privacy Policy</h3>
-            <p class="announcement-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              ducimus minima totam corporis ad, sit quam eveniet eius
-              voluptates...
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="trending" class="section">
-        <h1 class="section-heading">Trending</h1>
-        <div class="container trending-grid">
-          <div class="profile-pic small-pic"></div>
-          <div class="names-container">
-            <p class="trending-author">@rickylobo</p>
-            <p class="trending-name">World Peace Builder</p>
-          </div>
 
-          <div class="profile-pic small-pic pic-1"></div>
-          <div class="names-container">
-            <p class="trending-author">@chico</p>
-            <p class="trending-name">Life Changing App</p>
+      <!-- ASIDE -->
+      <aside class="main-aside">
+        <section id="announcements" class="section">
+          <h1 class="section-heading">Announcements</h1>
+          <div class="announcements-container container">
+            <div class="announcement">
+              <h3 class="announcement-heading">Site Maintenance</h3>
+              <p class="announcement-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+                nulla deleniti asperiores deserunt, molestiae tempore
+                delectus...
+              </p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <h3 class="announcement-heading">Community Share Day</h3>
+              <p class="announcement-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex vel
+                vitae necessitatibus quaerat minus ducimus doloremque culpa
+                beatae...
+              </p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <h3 class="announcement-heading">Updated Privacy Policy</h3>
+              <p class="announcement-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                ducimus minima totam corporis ad, sit quam eveniet eius
+                voluptates...
+              </p>
+            </div>
           </div>
-
-          <div class="profile-pic small-pic pic-2"></div>
-          <div class="names-container">
-            <p class="trending-author">@roberto</p>
-            <p class="trending-name">The Worst App</p>
+        </section>
+        <section id="trending" class="section">
+          <h1 class="section-heading">Trending</h1>
+          <div class="container trending-grid">
+            <div class="profile-pic small-pic"></div>
+            <div class="names-container">
+              <p class="trending-author">@rickylobo</p>
+              <p class="trending-name">World Peace Builder</p>
+            </div>
+            <div class="profile-pic small-pic pic-1"></div>
+            <div class="names-container">
+              <p class="trending-author">@chico</p>
+              <p class="trending-name">Life Changing App</p>
+            </div>
+            <div class="profile-pic small-pic pic-2"></div>
+            <div class="names-container">
+              <p class="trending-author">@roberto</p>
+              <p class="trending-name">The Worst App</p>
+            </div>
+            <div class="profile-pic small-pic pic-3"></div>
+            <div class="names-container">
+              <p class="trending-author">@heisenberg</p>
+              <p class="trending-name">Baby Blue App</p>
+            </div>
           </div>
-
-          <div class="profile-pic small-pic pic-3"></div>
-          <div class="names-container">
-            <p class="trending-author">@heisenberg</p>
-            <p class="trending-name">Baby Blue App</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </aside>
     </main>
   </body>
 </html>
