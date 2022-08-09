@@ -27,7 +27,7 @@ body {
   min-height: 100%;
 
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas:
     "sidebar header"
@@ -42,13 +42,18 @@ button {
   background: none;
 }
 
+.icon-btn {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
 /******* SIDEBAR *******/
 .sidebar {
   grid-area: sidebar;
   color: white;
   background-color: var(--purple-600);
   padding: 2rem;
-  padding-right: 4rem;
+  padding-right: 8rem;
 }
 
 .logo {
@@ -75,6 +80,8 @@ button {
 }
 
 .nav li {
+  height: 2.5rem;
+  width: 2.5rem;
   display: grid;
   grid-template-columns: 4.5rem auto;
   grid-auto-flow: column;
@@ -83,8 +90,7 @@ button {
 }
 
 .icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  height: 100%;
   justify-self: center;
 }
 
@@ -98,7 +104,6 @@ button {
   color: inherit;
   font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 1px;
   text-decoration: none;
 }
 
@@ -215,17 +220,70 @@ input#search {
 
 /******* MAIN *******/
 .main {
-  background-color: rgb(190, 136, 240);
+  background-color: var(--purple-100);
   grid-area: main;
+  padding: 3rem 1.5rem;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  gap: 2rem;
 }
 
 /* PROJECTS */
 #projects {
+  grid-area: projects;
 }
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 3rem;
+  column-gap: 2.5rem;
+}
+
+.project {
+  background-color: white;
+  border-radius: 5px;
+  border-left: 8px solid var(--purple-800);
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.section-heading {
+  grid-column: 1/-1;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 2rem;
+  align-self: flex-end;
+}
+
 /* ANNOUNCEMENTS */
 #announcements {
+  grid-area: announcements;
 }
 
 /* TRENDING */
 #trending {
+  grid-area: trending;
 }
