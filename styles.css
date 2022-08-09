@@ -1,5 +1,5 @@
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   height: 100%;
   font-size: 62.5%;
   box-sizing: border-box;
@@ -36,6 +36,7 @@ body {
 }
 
 button {
+  font: inherit;
   cursor: pointer;
   border: none;
   outline: none;
@@ -295,7 +296,7 @@ input#search:not(:placeholder-shown) + label[for="search"] {
 }
 
 .description {
-  color: #888;
+  color: #555;
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
@@ -331,15 +332,15 @@ input#search:not(:placeholder-shown) + label[for="search"] {
 }
 
 .announcement-heading {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 6px;
 }
 
 .announcement-text {
   max-width: 35ch;
-  color: #888;
-  font-size: 1.2rem;
+  color: #555;
+  font-size: 1.4rem;
 }
 
 /* TRENDING */
@@ -356,13 +357,14 @@ input#search:not(:placeholder-shown) + label[for="search"] {
 
 .trending-author {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
-.trending-name {
-  color: #888;
+.trending-project {
+  color: #555;
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .profile-pic.pic-1 {
